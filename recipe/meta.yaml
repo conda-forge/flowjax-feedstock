@@ -1,5 +1,6 @@
 {% set name = "flowjax" %}
-{% set version = "19.0.0" %}
+{% set version = "19.1.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/flowjax-{{ version }}.tar.gz
-  sha256: 58a1659ccf7d64c4d160df8948afc208cf61d40a819acf19ace61a56778d2432
+  sha256: 0c22ace574ec9e22eac9a1abc2ab84264d5d7634a6b648a522575468cee89bcf
 
 build:
   noarch: python
@@ -21,8 +22,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - jax >=0.4.16
-    - equinox >=0.10
+    - jax >=0.7.0
+    - equinox >=0.11
     - jaxtyping
     - tqdm
     - optax
