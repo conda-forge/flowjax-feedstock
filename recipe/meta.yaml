@@ -1,5 +1,5 @@
 {% set name = "flowjax" %}
-{% set version = "19.1.0" %}
+{% set version = "19.1.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/flowjax-{{ version }}.tar.gz
-  sha256: 0c22ace574ec9e22eac9a1abc2ab84264d5d7634a6b648a522575468cee89bcf
+  sha256: a85ee01726c1e0fe03adea605ce721e9122fbb51644dc579736939d457ca1148
 
 build:
   noarch: python
