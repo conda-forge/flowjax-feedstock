@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `flowjax` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install flowjax
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install flowjax
 ```
 
-It is possible to list all of the versions of `flowjax` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add flowjax
+# for installing globally
+pixi global install flowjax
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `flowjax` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search flowjax --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search flowjax --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search flowjax --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds flowjax --channel conda-forge
 # List dependencies of `flowjax`:
 mamba repoquery depends flowjax --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
